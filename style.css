@@ -1,0 +1,84 @@
+/* #imagePreview {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.task-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+} */
+
+body {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.todo-container {
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.task-card {
+    transition: all 0.3s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.img-preview-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#imagePreview {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 767px) {
+    .date-complete-row .col-sm-8,
+    .date-complete-row .col-sm-4 {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .priority-category-row .col-sm-6 {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .form-check {
+        margin-top: 0.5rem;
+    }
+}
+
+/* Custom styles for task cards */
+.task-content {
+    width: 100%;
+}
+
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+@media (max-width: 400px) {
+    .action-buttons .btn {
+        width: 100%;
+    }
+}
