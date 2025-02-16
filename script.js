@@ -18,10 +18,13 @@ const completedTasksCount = document.getElementById('completedTasksCount');
 // Handle image input change
 taskImage.addEventListener("change", function(e) {
     const file = e.target.files[0];
+    if (file) {
+
         const reader = new FileReader();
         reader.onload = function(e) {
             imagePreview.src = e.target.result;
             imagePreview.style.display = "block";
+        };
         reader.readAsDataURL(file);
     }
 });
