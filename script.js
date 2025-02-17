@@ -270,7 +270,6 @@ function saveTodoList() {
         localStorage.setItem("todoList", JSON.stringify(todoList));
     } catch (error) {
         console.error("Error saving to localStorage:", error);
-        // alert("There was an error saving your tasks. Please ensure you have enough storage space.");
     }
 }
 
